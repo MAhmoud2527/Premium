@@ -204,7 +204,7 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-		body:after {
+/*		body:after {
 			pointer-events: none;
 			content: '';
 			display: block;
@@ -219,7 +219,7 @@ input, select, textarea {
 			background-image: url("../../images/overlay.png"), url("../../images/bg.jpg");
 			background-repeat: repeat, repeat-x;
 			background-size: 128px 128px, cover;
-		}
+		}*/
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
@@ -305,7 +305,7 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		color: inherit;
-		border-bottom: dotted 1px;
+		/*border-bottom: dotted 1px;*/
 		text-decoration: none;
 	}
 
@@ -350,12 +350,12 @@ input, select, textarea {
 	}
 
 		h1.major:after, h2.major:after, h3.major:after {
-			content: '';
-			position: absolute;
-			left: 0;
-			width: 3.5rem;
-			height: 0.1rem;
-			background-color: rgba(255, 255, 255, 0.25);
+		    content: '';
+		    position: absolute;
+		    left: 0;
+		    width: 85px;
+		    height: 3px;
+		    background-color: rgb(224, 152, 27);
 		}
 
 	h1 {
@@ -1221,7 +1221,7 @@ input, select, textarea {
 			margin: 1.5rem 0 0 1.5rem;
 			padding-left: 0;
 		}
-
+/*
 		ul.grid-icons.connected > li:before {
 			content: '';
 			display: block;
@@ -1242,7 +1242,7 @@ input, select, textarea {
 			top: -1.5rem;
 			left: 50%;
 			background-color: rgba(255, 255, 255, 0.25);
-		}
+		}*/
 
 		ul.grid-icons.two {
 			width: 14rem;
@@ -1344,7 +1344,7 @@ input, select, textarea {
 	}
 
 		ul.contact-icons > li {
-			margin: 16px 0 0 0;
+			margin: 7px 0 0 0;
 			padding-left: 0;
 		}
 
@@ -1608,7 +1608,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: white;
+			background-color: #e0981b;
 			box-shadow: none;
 			color: #2e2b37 !important;
 		}
@@ -3307,9 +3307,15 @@ input, select, textarea {
 		}
 
 	@media screen and (max-width: 736px) {
-
+		.logo{
+	        position: absolute!important;
+		    z-index: 999999!important;
+		    top: -1px!important;
+		    padding: 18px!important;
+		    left: 155px!important;
+		}
 		.panel.banner .content {
-			padding: 2.8875rem 1.75rem 1.3875rem 1.75rem ;
+			padding: 6.8875rem 1.75rem 1.3875rem 1.75rem ;
 			-moz-flex-basis: 60%;
 			-webkit-flex-basis: 60%;
 			-ms-flex-basis: 60%;
@@ -3572,12 +3578,13 @@ input, select, textarea {
 			}
 
 		#wrapper > .copyright {
-			position: absolute;
-			bottom: -3rem;
-			right: 0;
-			font-size: 0.8rem;
-			color: rgba(46, 43, 55, 0.375);
-			margin-bottom: 0;
+		    position: absolute;
+		    bottom: -3rem;
+		    right: 0;
+		    font-size: 16px;
+		    font-weight: 500;
+		    color: #141415;
+		    margin-bottom: 0;
 		}
 
 			#wrapper > .copyright a:hover {
@@ -3668,7 +3675,29 @@ input, select, textarea {
 	}
 
 	.span-1-5 span{
-    font-size: 21px;
+    /*font-size: 21px;*/
     color: #fedea6;
     padding-right: 11px;
 	}
+	.logo{
+    position: fixed;
+    z-index: 999999;
+    top: 0px;
+    left: 40%;
+    padding: 18px;
+	}
+	.logo a{
+		text-decoration: none!important;
+		border: none;
+	}
+	.logo img{
+		width: 287px;
+	}
+
+	.grid-icons .iamg{
+	    width: 152px;
+    	height: 108px;
+}
+	.grid-icons .iamg2{
+	    padding-top: 27px;
+}
